@@ -30,7 +30,26 @@
 }
 
 header {
-  height: 300px;
+  height: 180px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+header small {
+  font-family: var(--fm);
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #000000;
+  text-align: center;
+  padding: 0px 7px;
+  font-weight: bold;
+}
+
+header h1 {
+  font-family: var(--fm);
+  font-size: 72px;
+  color: #000000;
+  text-align: center;
 }
 
 .pic img {
@@ -136,24 +155,32 @@ header {
   height: 100%;
 }
 
-.item4 .pic img,
-.item5 .pic img,
-.item7 .pic img {
-  /* width: auto; */
-  height: 100%;
-}
-
 .item .item-content {
   padding-bottom: 83.33333%;
 }
 
 /* ================= */
 
-.item1 .item-content {
-  /* padding-bottom: 20.833333%; */
+.item1,
+.item2,
+.item5 {
+  margin-bottom: 20%;
 }
 
-/* ================= */
+.item6 {
+  margin-top: 21%;
+}
+
+.item7 {
+  margin-top: -21%;
+}
+
+.item4 .pic img,
+.item5 .pic img,
+.item7 .pic img {
+  /* width: auto; */
+  height: 100%;
+}
 
 .item1 .pic {
   width: 100%;
@@ -180,7 +207,7 @@ header {
 .item5 .pic {
   width: 50%;
   height: 100%;
-  transform: translate(100%, 0%);
+  transform: translate(100%, 0%) scaleX(-1);
 }
 
 .item6 .pic {
@@ -220,13 +247,17 @@ header {
   width: 100%;
 }
 
-.item4 h2 {}
+.item4 h2 {
+  transform: rotate(-90deg) translate(23%, -60%);
+}
 
 .item5 h2 {
   bottom: 50%;
 }
 
-.item7 h2 {}
+.item7 h2 {
+  transform: rotate(90deg) translate(46%, -60%);
+}
 
 .item1 .striped {
   width: 50%;
