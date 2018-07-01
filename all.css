@@ -101,11 +101,15 @@ header h1 {
   font-family: var(--fm);
   font-weight: 700;
   font-style: italic;
+  position: absolute;
+  z-index: 6;
 }
 
 .item-content .number {
   font-family: var(--fm);
   font-size: var(--fz1);
+  position: absolute;
+  z-index: 6;
 }
 
 .color-box {
@@ -270,7 +274,7 @@ header h1 {
   width: 50%;
   height: 25%;
   bottom: 0;
-  transform: translate(25%, 50%);
+  transform: translate(0%, 50%);
   right: 0;
 }
 
@@ -367,4 +371,45 @@ header h1 {
   bottom: 12%;
   left: 0;
   transform: translate(200%, 0%);
+}
+
+.item1 .number {
+  height: 100%;
+  transform: translate(0%, 100%);
+}
+
+.item2 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(88%, 0%);
+}
+
+.item3 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(100%, 50%);
+}
+
+.item4 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(38%, 100%);
+}
+
+.item5 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(25%, 75%);
+}
+
+.item6 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(-12%, 38%);
+}
+
+.item7 .number {
+  height: 100%;
+  width: 100%;
+  transform: translate(63%, 77%);
 }
